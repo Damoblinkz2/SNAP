@@ -1,0 +1,8 @@
+.lett{
+    margin:16px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: skyblue;
+    box-shadow: 0 2p 5px #ccc;
+}

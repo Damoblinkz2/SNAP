@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*RESPONSIVE DESIGN PAGE*/
+@media only screen and (max-width:768px) {
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .head .menu, header .access{
+    display: none !important;
+  }
+
+  .side-bar{
+    display: block !important;
+    background: hsl(0, 0%, 80%);
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow-y: auto;
+    padding: 10px;
+    transition: .5s ease;
+  }
+
+  .side-bar .sidemenu{
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+  .side-bar .sidemenu .menu{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-bar .sidemenu .menu div div div:first-child{
+     height: 50px;
+  }
+
+  .side-bar .access{
+    text-align: center;
+  }
+  .side-bar .access .signin{
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 5px;
+  }
+  header .menu-icon{
+    display: block !important;
+  }
+  .banner .bannerwrite{
+    text-align: center;
+  }
+  .banner .bannerwrite h1{
+    font-size: 250% !important;
+  }
+  .banner .mobile{
+    display: block !important;
+  }
+  .banner .mobile img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner .desktop{
+    display: none;
+  }
 }
